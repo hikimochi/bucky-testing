@@ -1,0 +1,18 @@
+desc: suite description
+device: pc
+service: service_name
+priority: high
+test_category: e2e
+labels: test_label_foo
+cases:
+  - case_name: top_1
+    func: inquire button
+    desc: case description
+    labels:
+      - test_label_bar
+      - test_label_baz
+    procs:
+      - proc: open page
+        exec:
+          operate: go
+          url: https://example.com/
