@@ -1,12 +1,5 @@
 # Add some parts for this page
 
-# Sample ====================
-# freewod_form:
-#    - xpath
-#    - "//*[@id='freeword']"
-# photos:
-#    - css
-#    - '.photos'
-# icon:
-#    - id
-#    - icon
+title_e2e_pc:
+   - xpath
+   - "//*[contains(@class,'title') and contains(text(), 'e2e-pc')]"

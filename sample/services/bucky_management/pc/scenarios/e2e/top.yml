@@ -3,7 +3,7 @@ device: pc
 service: service_name
 priority: high
 test_category: e2e
-labels: test_label_foo
+labels: top
 cases:
   - case_name: top_1
     func: inquire button
@@ -15,4 +15,10 @@ cases:
       - proc: open page
         exec:
           operate: go
-          url: https://example.com/
+          url: <%= ENV['BUCKY_FQDN'] %>/
+      - proc: title
+        exec:
+          verify: assert_text
+          page: top
+          part: title_e2e_pc
+          expect: Latest Result e2e-pc
