@@ -1,6 +1,6 @@
 desc: suite description
 device: pc
-service: service_name
+service: bucky_management
 priority: high
 test_category: e2e
 labels: top
