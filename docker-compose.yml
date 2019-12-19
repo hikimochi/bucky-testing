@@ -1,9 +1,7 @@
 version: '3.3'
 services:
   bucky-core:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: lifullsetg/bucky-core:0.9.22
     container_name: bucky-core
     networks:
       dev:
