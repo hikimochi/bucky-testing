@@ -13,7 +13,7 @@ services:
       - BUCKY_DB_PASSWORD=password
       - BUCKY_DB_HOSTNAME=bm-mysql
       - BUCKY_DB_NAME=bucky_development
-      - BUCKY_FQDN=http://localhost
+      - BUCKY_FQDN=http://bm-web
   chrome:
     image: selenium/standalone-chrome-debug:3.141.59-oxygen
     container_name: chrome
