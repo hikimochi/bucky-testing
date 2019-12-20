@@ -3,7 +3,7 @@ device: pc
 service: bucky_management
 priority: high
 test_category: e2e
-labels: top
+labels: TOP
 cases:
   - case_name: top_1
     func: inquire button
