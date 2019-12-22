@@ -1,4 +1,4 @@
-desc: suite description
+desc: トップ画面に関係するテスト
 device: pc
 service: bucky_management
 priority: high
@@ -8,15 +8,12 @@ cases:
   - case_name: top_1
     func: inquire button
     desc: case description
-    labels:
-      - test_label_bar
-      - test_label_baz
     procs:
       - proc: open page
         exec:
           operate: go
           url: <%= ENV['BUCKY_FQDN'] %>/
-      - proc: title
+      - proc: 右上のグラフのタイトルが「Latest Result e2e-pc」であること
         exec:
           verify: assert_text
           page: top
