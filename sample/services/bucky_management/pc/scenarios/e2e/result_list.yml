@@ -3,7 +3,7 @@ device: pc
 service: bucky_management
 priority: high
 test_category: e2e
-labels: TOP # RESULT_LIST
+labels: RESULT_LIST
 cases:
   - case_name: result_list_1
     func: ページタイトル表示

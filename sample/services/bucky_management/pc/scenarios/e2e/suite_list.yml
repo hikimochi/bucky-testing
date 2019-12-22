@@ -3,7 +3,7 @@ device: pc
 service: bucky_management
 priority: high
 test_category: e2e
-labels: TOP # SUITE_LIST
+labels: SUITE_LIST
 cases:
   - case_name: suite_list_1
     func: タイトル表示

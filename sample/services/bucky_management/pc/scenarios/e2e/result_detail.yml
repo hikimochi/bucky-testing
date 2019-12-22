@@ -3,7 +3,7 @@ device: pc
 service: bucky_management
 priority: high
 test_category: e2e
-labels: TOP # RESULT_DETAIL
+labels: RESULT_DETAIL
 cases:
   - case_name: result_detail_1
     func: Summary表示

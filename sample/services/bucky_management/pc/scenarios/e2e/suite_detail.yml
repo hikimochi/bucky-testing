@@ -3,7 +3,7 @@ device: pc
 service: bucky_management
 priority: high
 test_category: e2e
-labels: TOP # SUITE_DETAIL
+labels: SUITE_DETAIL
 cases:
   - case_name: suite_detail_1
     func: 右上のグラフのタイトル表示
