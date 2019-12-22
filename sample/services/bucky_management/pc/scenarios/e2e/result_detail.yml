@@ -1,11 +1,11 @@
-desc: トップ画面に関係するテスト
+desc: テスト結果詳細画面に関係するテスト
 device: pc
 service: bucky_management
 priority: high
 test_category: e2e
-labels: TOP
+labels: RESULT_DETAIL
 cases:
-  - case_name: top_1
+  - case_name: result_detail_1
     func: 右上のグラフのタイトル表示
     desc: 右上のグラフのタイトル表示の検証
     procs:
@@ -16,6 +16,6 @@ cases:
       - proc: 右上のグラフのタイトルが「Latest Result e2e-pc」であること
         exec:
           verify: assert_text
-          page: top
+          page: result_detail
           part: title_e2e_pc
           expect: Latest Result e2e-pc

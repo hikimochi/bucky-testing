@@ -1,0 +1,5 @@
+# Add some parts for this page
+
+title:
+   - xpath
+   - "//*[@class='is-size-2']"

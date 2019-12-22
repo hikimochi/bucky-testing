@@ -1,0 +1,21 @@
+desc: テスト結果一覧画面に関係するテスト
+device: pc
+service: bucky_management
+priority: high
+test_category: e2e
+labels: RESULT_LIST
+cases:
+  - case_name: result_list_1
+    func: ページタイトル表示
+    desc: ページタイトル表示の検証
+    procs:
+      - proc: open page
+        exec:
+          operate: go
+          url: <%= ENV['BUCKY_FQDN'] %>/test_reports
+      - proc: タイトルが「Test Reports」であること
+        exec:
+          verify: assert_text
+          page: result_list
+          part: title
+          expect: Test Reports

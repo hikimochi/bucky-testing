@@ -1,11 +1,11 @@
-desc: トップ画面に関係するテスト
+desc: テストスイート詳細画面に関係するテスト
 device: pc
 service: bucky_management
 priority: high
 test_category: e2e
-labels: TOP
+labels: SUITE_DETAIL
 cases:
-  - case_name: top_1
+  - case_name: suite_detail_1
     func: 右上のグラフのタイトル表示
     desc: 右上のグラフのタイトル表示の検証
     procs:
