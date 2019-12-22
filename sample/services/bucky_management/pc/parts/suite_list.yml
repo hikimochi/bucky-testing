@@ -1,5 +1,3 @@
-# Add some parts for this page
-
-title_e2e_pc:
+title:
    - xpath
-   - "//*[contains(@class,'title') and contains(text(), 'e2e-pc')]"
+   - "//*[@class='is-size-2']"

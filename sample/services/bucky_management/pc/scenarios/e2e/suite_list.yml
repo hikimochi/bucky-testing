@@ -3,19 +3,19 @@ device: pc
 service: bucky_management
 priority: high
 test_category: e2e
-labels: SUITE_LIST
+labels: TOP # SUITE_LIST
 cases:
   - case_name: suite_list_1
-    func: 右上のグラフのタイトル表示
-    desc: 右上のグラフのタイトル表示の検証
+    func: タイトル表示
+    desc: タイトル表示の検証
     procs:
       - proc: open page
         exec:
           operate: go
-          url: <%= ENV['BUCKY_FQDN'] %>/
-      - proc: 右上のグラフのタイトルが「Latest Result e2e-pc」であること
+          url: <%= ENV['BUCKY_FQDN'] %>/test_suites
+      - proc: タイトルが「Test Suites」であること
         exec:
           verify: assert_text
-          page: top
-          part: title_e2e_pc
-          expect: Latest Result e2e-pc
+          page: suite_list
+          part: title
+          expect: Test Suites

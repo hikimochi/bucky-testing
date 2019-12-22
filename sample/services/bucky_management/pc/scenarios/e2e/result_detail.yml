@@ -3,19 +3,19 @@ device: pc
 service: bucky_management
 priority: high
 test_category: e2e
-labels: RESULT_DETAIL
+labels: TOP # RESULT_DETAIL
 cases:
   - case_name: result_detail_1
-    func: 右上のグラフのタイトル表示
-    desc: 右上のグラフのタイトル表示の検証
+    func: Summary表示
+    desc: Summary表示の検証
     procs:
       - proc: open page
         exec:
           operate: go
-          url: <%= ENV['BUCKY_FQDN'] %>/
-      - proc: 右上のグラフのタイトルが「Latest Result e2e-pc」であること
+          url: <%= ENV['BUCKY_FQDN'] %>/test_reports/45
+      - proc: 日付下に「Summary」という文字列があること
         exec:
           verify: assert_text
           page: result_detail
-          part: title_e2e_pc
-          expect: Latest Result e2e-pc
+          part: summary
+          expect: Summary
